@@ -103,11 +103,14 @@
 			"patterns": [
 				{
 					"match": "(?x)(?<![A-Za-z0-9_@]) (?i: all_scripts|cms_resources|dropzone|dump|extends|else|header_content|include|include_documents|include_entities|include_products|inline_style|json_attribute|make_url|parent|preload_json|require_script|set_header|set_var|set|visitor_tracking_pixel)\\b",
-					"name": "entity.name.function.hypr"
+					"name": "support.function.construct.hypr"
 				},
 				{
 					"match": "(?x)(?<![A-Za-z0-9_@]) (end)? (?i: autoescape|block|filter|for|if|partial_cache|spaceless|with)\\b",
-					"name": "entity.name.function.hypr"
+					"name": "support.function.construct.hypr"
+				},
+				{
+					"include": "#hypr-variables"
 				},
 				{
 					"include": "#operators"
@@ -133,6 +136,9 @@
           "name": "storage.modifier.hypr"
 				},
 				{
+					"include": "#hypr-variables"
+				},
+				{
 					"include": "#operators"
 				},
 				{
@@ -149,6 +155,14 @@
 				},
 				{
 					"include": "#brackets"
+				}
+			]
+		},
+		"hypr-variables":{
+			"patterns": [
+				{
+					"match": "(?xi)\\b\n(\n pageModel|siteContext|pageContext|navigation|user|categories|themeSettings|labels|routeData)\\b",
+					"name": "support.type.hypr"
 				}
 			]
 		},
@@ -235,7 +249,7 @@
         {
           "match": "0|[1-9][0-9]*",
           "name": "constant.numeric.decimal.hypr"
-        }
+				}
 			]
 		},
 		"keywords":{
