@@ -1,0 +1,29 @@
+{
+    "name": "hypr-language-extension",
+    "displayName": "Hypr Language Extension",
+    "description": "Syntax highlighting and grammar for hypr language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hypr",
+            "aliases": ["Hypr", "hypr", "HyprLive"],
+            "extensions": [".hypr", ".hypr.live"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hypr",
+            "scopeName": "text.html.hypr",
+            "path": "./syntaxes/hypr.tmLanguage.json",
+            "embeddedLanguages": {
+                "source.css": "css",
+                "source.js": "javascript"
+            }
+        }]
+    }
+}

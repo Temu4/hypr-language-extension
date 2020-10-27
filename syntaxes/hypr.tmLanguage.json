@@ -1,0 +1,258 @@
+{
+	"scopeName": "text.html.hypr",
+	"name": "Hypr",
+	"fileTypes": [
+		"hypr",
+		"hypr.live"
+	],
+	"foldingStartMarker": "(/\\*|\\{\\s*$|<<<HTML)",
+  "foldingStopMarker": "(\\*/|^\\s*\\}|^HTML;)",
+  "injections":{
+		"text.html.hypr - (meta.embedded | meta.tag | comment.block.hypr), L:(text.html.hypr meta.tag - (comment.block.hypr | meta.embedded.block.hypr)), L:(source.js.embedded.html - (comment.block.hypr | meta.embedded.block.hypr))": {
+      "patterns": [
+        {
+          "include": "#hypr-syntax"
+        }
+      ]
+    }
+	},
+	"patterns": [
+		{
+		"include": "text.html.basic"
+		}
+	],
+	"repository": {
+		"hypr-syntax": {
+			"patterns": [
+				{
+					"begin": "{% comment %}",
+					"end": "{% endcomment %}",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.block.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.block.end.hypr"
+						}
+					},
+					"name": "comment.block.hypr"
+				},
+				{
+					"begin": "{#",
+					"end": "#}",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.line.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.line.end.hypr"
+						}
+					},
+					"name": "comment.line.hypr"
+				},
+				{
+					"begin": "{%",
+					"end": "%}",
+					"beginCaptures": {
+						"0": {
+							"name": "support.function.construct.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "support.function.construct.end.hypr"
+						}
+					},
+					"name": "meta.function.echo.hypr",
+					"patterns":[
+						{
+							"include": "#hypr-filters"
+						},
+						{
+							"include": "#hypr-tags"
+						}
+					]
+				},
+				{
+					"begin": "{{",
+					"end": "}}",
+					"beginCaptures": {
+						"0": {
+							"name": "support.function.construct.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "support.function.construct.end.hypr"
+						}
+					},
+					"name": "meta.function.echo.hypr",
+					"patterns":[
+						{
+							"include": "#hypr-filters"
+						}
+					]
+				}
+			]
+		},
+		"hypr-tags":{
+			"patterns": [
+				{
+					"match": "(?x)(?<![A-Za-z0-9_@]) (?i: all_scripts|cms_resources|dropzone|dump|extends|else|header_content|include|include_documents|include_entities|include_products|inline_style|json_attribute|make_url|parent|preload_json|require_script|set_header|set_var|set|visitor_tracking_pixel)\\b",
+					"name": "entity.name.function.hypr"
+				},
+				{
+					"match": "(?x)(?<![A-Za-z0-9_@]) (end)? (?i: autoescape|block|filter|for|if|partial_cache|spaceless|with)\\b",
+					"name": "entity.name.function.hypr"
+				},
+				{
+					"include": "#operators"
+				},
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#punctuation"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#constants"
+				}
+			]
+		},
+		"hypr-filters":{
+			"patterns": [
+				{
+          "match": "(?xi)\\b\n(\n add|add_time|currency|date|default|dictsort|dictsortreversed|divide|divisibleby|escape|find|findwhere|first|fix_ampersands|floatformat|get_product_attribute|get_product_attribute_value|get_product_attribute_values|is_after|is_before|join|last|linenumbers|lower|mod|multiply|prop|replace|safe|slugify|split|string_format|subtract|timesince|timeuntil|truncatewords|upper|urlencode)\\b",
+          "name": "storage.modifier.hypr"
+				},
+				{
+					"include": "#operators"
+				},
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#punctuation"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#constants"
+				},
+				{
+					"include": "#brackets"
+				}
+			]
+		},
+		"punctuation":{
+			"patterns": [
+				{
+					"match": "\\|",
+					"name": "punctuation.separator.delimiter.hypr"
+				},
+				{
+					"match": "\\.",
+					"name": "punctuation.accessor.hypr"
+				}
+			]
+		},
+		"strings":{
+			"patterns":[
+				{
+					"begin": "\"",
+					"end": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.hypr"
+						}
+					},
+					"name": "string.quoted.double.hypr"
+				},
+				{
+					"begin": "'",
+					"end": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.hypr"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.hypr"
+						}
+					},
+					"name": "string.quoted.single.hypr"
+				}
+			]
+		},
+		"operators":{
+			"patterns": [
+				{
+          "match": "==|!=|<|>|>=|<=",
+          "name": "keyword.operator.comparison.hypr"
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.hypr"
+        },
+        {
+          "match": "(?i)\\b(and|or|not|as|in)\\b",
+          "name": "keyword.operator.logical.hypr"
+        }
+			]
+		},
+		"constants":{
+			"patterns": [
+				{
+					"match": "true|false",
+					"name": "constant.language.hypr"
+				},
+        {
+          "match": "(?x)\n(?:\n  [0-9]*(\\.)[0-9]+(?:[eE][+-]?[0-9]+)?|\n  [0-9]+(\\.)[0-9]*(?:[eE][+-]?[0-9]+)?|\n  [0-9]+[eE][+-]?[0-9]+\n)",
+          "name": "constant.numeric.decimal.hypr",
+          "captures": {
+            "1": {
+              "name": "punctuation.separator.decimal.period.hypr"
+            },
+            "2": {
+              "name": "punctuation.separator.decimal.period.hypr"
+            }
+          }
+        },
+        {
+          "match": "0|[1-9][0-9]*",
+          "name": "constant.numeric.decimal.hypr"
+        }
+			]
+		},
+		"keywords":{
+			"patterns": [
+				{
+					"match": "as_parameter|reversed",
+					"name": "keyword.operator.hypr"
+				}
+			]
+		},
+		"brackets":{
+			"patterns": [
+				{
+					"match": "[(|)]",
+					"name": "keyword.other.hypr"
+        }
+			]
+		}
+	}
+}
