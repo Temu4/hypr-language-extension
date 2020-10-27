@@ -162,7 +162,7 @@
 			"patterns": [
 				{
 					"match": "(?xi)\\b\n(\n pageModel|siteContext|pageContext|navigation|user|categories|themeSettings|labels|routeData)\\b",
-					"name": "support.type.hypr"
+					"name": "variable.language.hypr"
 				}
 			]
 		},
@@ -256,7 +256,7 @@
 			"patterns": [
 				{
 					"match": "as_parameter|reversed",
-					"name": "keyword.operator.hypr"
+					"name": "variable.parameter.hypr"
 				}
 			]
 		},
