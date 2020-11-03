@@ -103,11 +103,11 @@
 			"patterns": [
 				{
 					"match": "(?x)(?<![A-Za-z0-9_@]) (?i: all_scripts|cms_resources|dropzone|dump|extends|else|header_content|include|include_documents|include_entities|include_products|inline_style|json_attribute|make_url|parent|preload_json|require_script|set_header|set_var|set|visitor_tracking_pixel)\\b",
-					"name": "support.function.construct.hypr"
+					"name": "support.function.tag.hypr"
 				},
 				{
 					"match": "(?x)(?<![A-Za-z0-9_@]) (end)? (?i: autoescape|block|filter|for|if|partial_cache|spaceless|with)\\b",
-					"name": "support.function.construct.hypr"
+					"name": "support.function.tag.hypr"
 				},
 				{
 					"include": "#hypr-variables"
