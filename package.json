@@ -1,7 +1,7 @@
 {
     "name": "hypr-syntax",
     "displayName": "Hypr Syntax and Grammar Support",
-    "description": "Visual Studio Code Hypr/HyperLive language syntax highlighting and grammar support",
+    "description": "Visual Studio Code Hypr/HyprLive language syntax highlighting and grammar support",
     "version": "0.1.2",
     "publisher": "temu4",
     "author": {

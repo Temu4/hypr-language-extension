@@ -2,7 +2,7 @@
 
 Hypr/HyprLive syntax and highlight support for Visual Studio Code.
 
-> Related Hypr/HyperLive extension: [Hypr Snippets](https://marketplace.visualstudio.com/items?itemName=temu4.hypr-snippets)
+> Related Hypr/HyprLive extension: [Hypr Snippets](https://marketplace.visualstudio.com/items?itemName=temu4.hypr-snippets)
 
 ## Screenshot
 
