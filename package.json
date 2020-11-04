@@ -1,8 +1,8 @@
 {
     "name": "hypr-syntaxes",
     "displayName": "Hypr Language Extension",
-    "description": "Visual Studio Code syntaxes highlighting and grammar for hypr language",
-    "version": "0.0.1",
+    "description": "Visual Studio Code syntaxes highlighting and grammar support for hypr language",
+    "version": "0.1.0",
     "publisher": "temu4",
     "author": {
         "name": "Artem Vorobiov",
@@ -17,7 +17,7 @@
         "url": "https://github.com/Temu4/hypr-syntaxes/issues"
     },
     "engines": {
-        "vscode": "^1.50.0"
+        "vscode": "1.46.0"
     },
     "icon": "images/icon-hypr.png",
     "galleryBanner": {
