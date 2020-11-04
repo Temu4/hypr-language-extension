@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.1.2
+
+- Fixed VSCode version for extension.
+
 ### 0.1.1
 
 - Fixed `autoClosingPairs`.

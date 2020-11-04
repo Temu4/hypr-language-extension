@@ -14,11 +14,9 @@ Please apply any [issues](https://github.com/Temu4/hypr-syntax-vscode/issues) or
 
 ## Release Notes 
 
-### 0.1.1
+### 0.1.2
 
-- Fixed `autoClosingPairs`.
-- Add screenshot with syntax examples.
-- Update README.
+- Fixed VSCode version for extension.
 
 Please open [Changelog](https://github.com/Temu4/hypr-syntax-vscode/blob/main/CHANGELOG.md) for more information.
 
