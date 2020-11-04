@@ -6,7 +6,7 @@ Hypr/HyprLive syntax and highlight support for Visual Studio Code.
 
 ## Screenshot
 
-![Screenshot](https://github.com/Temu4/hypr-syntax-vscode/raw/master/images/screenshot.png)
+![Screenshot](https://github.com/Temu4/hypr-syntax-vscode/raw/main/images/screenshot.png)
 
 ## Contact
 
@@ -20,8 +20,8 @@ Please apply any [issues](https://github.com/Temu4/hypr-syntax-vscode/issues) or
 - Add screenshot with syntax examples.
 - Update README.
 
-Please open [Changelog](https://github.com/Temu4/hypr-syntax-vscode/blob/master/CHANGELOG.md) for more information.
+Please open [Changelog](https://github.com/Temu4/hypr-syntax-vscode/blob/main/CHANGELOG.md) for more information.
 
 ## License
 
-Please read [License](https://github.com/Temu4/hypr-syntax-vscode/blob/master/LICENSE.md) for more information.
+Please read [License](https://github.com/Temu4/hypr-syntax-vscode/blob/main/LICENSE.md) for more information.
