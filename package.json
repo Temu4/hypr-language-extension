@@ -2,7 +2,7 @@
     "name": "hypr-syntax",
     "displayName": "Hypr Syntax and Grammar Support",
     "description": "Visual Studio Code Hypr/HyprLive language syntax highlighting and grammar support",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "temu4",
     "author": {
         "name": "Artem Vorobiov",
@@ -52,6 +52,6 @@
     },
     "scripts": {
         "package": "vsce package",
-        "local": "code --install-extension hypr-syntax-0.1.2.vsix"
+        "local": "code --install-extension hypr-syntax-0.1.3.vsix"
     }
 }

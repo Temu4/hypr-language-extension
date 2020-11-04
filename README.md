@@ -8,15 +8,23 @@ Hypr/HyprLive syntax and highlight support for Visual Studio Code.
 
 ![Screenshot](https://github.com/Temu4/hypr-syntax-vscode/raw/main/images/screenshot.png)
 
+## Features
+
+- add new language "*hypr*" based on `.hypr` and `.hypr.live` files extensions to Visual Studio Code
+- provide syntax and highlight support
+- implement fast multiline comments by `cmd`+`/` (`ctrl`+`/` for Windows)
+
 ## Contact
 
 Please apply any [issues](https://github.com/Temu4/hypr-syntax-vscode/issues) or have a suggestion please touch me in Linkedin [Artem Vorobiov](https://www.linkedin.com/in/artem-vorobiov/).
 
 ## Release Notes 
 
-### 0.1.2
+### 0.1.3
 
-- Fixed VSCode version for extension.
+- Add test.hypr file for examples.
+- Update screenshot.
+- Add Features section to README.
 
 Please open [Changelog](https://github.com/Temu4/hypr-syntax-vscode/blob/main/CHANGELOG.md) for more information.
 

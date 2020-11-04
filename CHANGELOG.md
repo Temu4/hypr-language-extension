@@ -1,5 +1,11 @@
 # Change Log
 
+### 0.1.3
+
+- Add test.hypr file for examples.
+- Update screenshot.
+- Add Features section to README.
+
 ### 0.1.2
 
 - Fixed VSCode version for extension.
