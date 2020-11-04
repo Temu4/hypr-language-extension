@@ -1,0 +1,21 @@
+{% include "modules/test" with value=false %}
+
+{% make_url 'product' productCode with variant=small-green as_parameter %}
+
+{% if "argument" >= model.sum|add(100) %}
+{% else %}
+{% endif %}
+
+{% for item in array reversed %}
+{% endfor %}
+
+{% with HyprExpression as variable %}
+{% endwith %}
+
+{{ name|replace(themeSettings.testValue, ""|replace("_", " ")|safe }}
+
+{# test inline comment #}
+
+{% comment %}
+  test multiline comment 
+{% endcomment %}
