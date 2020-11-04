@@ -1,24 +1,27 @@
-# [Hypr Syntaxes](https://marketplace.visualstudio.com/items?itemName=temu4.hypr-syntaxes)
+# [Hypr Syntax](https://marketplace.visualstudio.com/items?itemName=temu4.hypr-syntax)
 
-Hypr syntaxes support and hightlight for Visual Studio Code.
+Hypr/HyprLive syntax and highlight support for Visual Studio Code.
+
+> Related Hypr/HyperLive extension: [Hypr Snippets](https://marketplace.visualstudio.com/items?itemName=temu4.hypr-snippets)
 
 ## Screenshot
 
-![Screenshot](https://github.com/Temu4/hypr-syntaxes/raw/master/images/screenshot.gif)
+![Screenshot](https://github.com/Temu4/hypr-syntax-vscode/raw/master/images/screenshot.png)
 
 ## Contact
 
-Please apply any [issues](https://github.com/Temu4/hypr-syntaxes/issues) or have a suggestion please touch me in Linkedin [Artem Vorobiov](https://www.linkedin.com/in/artem-vorobiov/).
+Please apply any [issues](https://github.com/Temu4/hypr-syntax-vscode/issues) or have a suggestion please touch me in Linkedin [Artem Vorobiov](https://www.linkedin.com/in/artem-vorobiov/).
 
 ## Release Notes 
 
-### 0.1.0
+### 0.1.1
 
-- Add basic syntaxes support and hightlight. 
-- Add description of the extension in README.
+- Fixed `autoClosingPairs`.
+- Add screenshot with syntax examples.
+- Update README.
 
-Please open [Changelog](https://github.com/Temu4/hypr-syntaxes/blob/master/CHANGELOG.md) for more information.
+Please open [Changelog](https://github.com/Temu4/hypr-syntax-vscode/blob/master/CHANGELOG.md) for more information.
 
 ## License
 
-Please read [License](https://github.com/Temu4/hypr-syntaxes/blob/master/LICENSE.md) for more information.
+Please read [License](https://github.com/Temu4/hypr-syntax-vscode/blob/master/LICENSE.md) for more information.

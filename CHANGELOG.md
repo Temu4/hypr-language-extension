@@ -1,9 +1,12 @@
 # Change Log
 
-All notable changes to the "hypr-language-extension" extension will be documented in this file.
+### 0.1.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Fixed `autoClosingPairs`.
+- Add screenshot with syntax example.
+- Update README.
 
-## [Unreleased]
+### 0.1.0
 
-- Initial release
+- Add basic syntax support and hightlight. 
+- Add description of the extension in README.

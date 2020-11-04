@@ -1,20 +1,20 @@
 {
-    "name": "hypr-syntaxes",
-    "displayName": "Hypr Language Extension",
-    "description": "Visual Studio Code syntaxes highlighting and grammar support for hypr language",
-    "version": "0.1.0",
+    "name": "hypr-syntax",
+    "displayName": "Hypr syntax and grammar support",
+    "description": "Visual Studio Code Hypr/HyperLive language syntax highlighting and grammar support",
+    "version": "0.1.2",
     "publisher": "temu4",
     "author": {
         "name": "Artem Vorobiov",
         "email": "artem.vorobjov@gmail.com"
     },
-    "homepage": "https://github.com/Temu4/hypr-syntaxes",
+    "homepage": "https://github.com/Temu4/hypr-syntax-vscode",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Temu4/hypr-syntaxes"
+        "url": "https://github.com/Temu4/hypr-syntax-vscode"
     },
     "bugs": {
-        "url": "https://github.com/Temu4/hypr-syntaxes/issues"
+        "url": "https://github.com/Temu4/hypr-syntax-vscode/issues"
     },
     "engines": {
         "vscode": "1.46.0"
@@ -27,6 +27,7 @@
     "keywords": [
         "grammar",
         "syntax",
+        "language",
         "hypr"
     ],
     "categories": [
@@ -51,6 +52,6 @@
     },
     "scripts": {
         "package": "vsce package",
-        "local": "code --install-extension hypr-syntaxes-0.0.1.vsix"
+        "local": "code --install-extension hypr-syntax-0.1.2.vsix"
     }
 }
